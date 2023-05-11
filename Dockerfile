@@ -16,6 +16,3 @@ RUN pip install jupyterlab-vim
 # 6999 for jupyter lab, 7000 for meshcat
 EXPOSE 6999
 EXPOSE 7000
-
-# Run jupyterlab when the container launches
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''", "--no-browser", "--port=6999"]
